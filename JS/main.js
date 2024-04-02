@@ -1,3 +1,7 @@
+const goupBtn = document.querySelector('.goupbtn');
+const titleList = document.querySelectorAll('h2');
+const topBtn = document.querySelector('.top-btn');
+
 const options = {
   root: null, // viewport
   rootMargin: '0px',
@@ -11,6 +15,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, options);
-
-const titleList = document.querySelectorAll('h2');
 titleList.forEach((el) => observer.observe(el));
+
+/* 버튼 이벤트 */
+topBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};

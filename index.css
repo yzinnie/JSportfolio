@@ -14,7 +14,8 @@
 h2 {
   transform: translateY(-50%);
   opacity: 0;
-  transition: 0.8s;
+  transition: 0.9s;
+  color: black;
 }
 
 h2.active {
@@ -22,36 +23,64 @@ h2.active {
   opacity: 1;
 }
 
-.image1 {
-  background-color: #fff;
-  background-size: cover;
+.main-image {
+  background: url(./imgs/img3.jpg) no-repeat;
   background-attachment: fixed;
+  background-size: contain;
 }
 
-.image3 {
-  background: url(https://cdn.pixabay.com/photo/2022/08/30/15/33/nature-7421337_960_720.jpg)
-    no-repeat;
-  background-attachment: fixed;
+.main-image h2 {
+  position: relative;
+  left: 40%;
 }
 
 /* ----------- */
 
-.content div {
+.main {
+  height: 100vh;
+}
+
+.main div {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
-span {
-  padding-left: 50px;
+#project {
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#project h2 {
+  padding-top: 2%;
+  font-size: 25px;
+  /* font-weight: 700; */
+  letter-spacing: 5px;
+}
+
+#content-info {
+  display: block;
+}
+
+#content-info img {
+  width: 3%;
+}
+
+.content {
+  padding-left: 10%;
+}
+
+.card {
+  margin-bottom: 2%;
 }
 
 /* 헤더 */
 
-#header {
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,8 +91,7 @@ span {
   left: 0;
   width: 100%;
   height: 100px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(8px);
+  background: #fff;
 }
 
 #header-main a {
@@ -85,6 +113,24 @@ span {
   width: 30px;
 }
 
+.header.header-hide {
+  margin-top: -100px;
+  transition: 200ms;
+}
+
 .card-text img {
   width: 30px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 41px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff00;
+  background-size: 50px;
+  background-position: center;
+  background-image: url('./imgs/menu-up.png');
+  cursor: pointer;
 }

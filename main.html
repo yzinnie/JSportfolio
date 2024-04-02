@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div id="header">
+    <header class="header">
       <div id="header-main">
         <h1>
           <a href="./index.html">jihyun Yoon</a>
@@ -23,14 +23,14 @@
         <ul>
           <li>
             <a href="https://github.com/yzinnie">
-              <img src="./imgs/icon-github.png"
+              <img src="./imgs/github-color.svg" alt="github-icon"
             /></a>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="content">
-      <div>
+    </header>
+    <div class="main">
+      <div class="content">
         <span>
           <h2>
             안녕하세요 👋🏻 <br /><br />
@@ -38,9 +38,14 @@
           </h2>
         </span>
       </div>
-      <div>
+
+      <div class="main-image">
+        <h2>즐거움과 함께 성장합니다.</h2>
+      </div>
+
+      <div id="project">
         <span>
-          <h2>프로젝트</h2>
+          <h2>/* projects */</h2>
           <br />
           <span id="card" class="card" style="width: 18rem flex-direction-row">
             <span class="card-body">
@@ -52,8 +57,75 @@
                 프로젝트입니다.
                 <br />
                 <br />
+                1인 프로젝트
+                <br />
+                <br />
                 <img src="./imgs/react-color.svg" alt="react-icon" />
                 <img src="./imgs/javascript-color.svg" alt="react-icon" />
+
+                <li>
+                  openweathermap API - 날씨 정보를 불러오는 API와 현재 위치
+                  정보에 접근할 수 있는 API(Geolocation API)를 사용하여 사용자
+                  위치에 맞는 현재 날씨를 출력하여 사용했습니다.
+                </li>
+                <li>
+                  kakao API - REST API를 사용하여 현재 위치의 좌표와 블로그 글
+                  자동 검색 기능을 구현했으며 MAP API를 사용하여 현재 위치와
+                  지도 이미지를 구현했습니다.
+                </li>
+                <li>
+                  한국환경공단 API (미세먼지) - 카카오에서 제공하는 REST API를
+                  사용하여 현재 위치의 좌표를 변환하고 행정구역 정보를 받아와
+                  미세먼지 정보를 사용했습니다.
+                </li>
+                <li>
+                  localStorage - 체크리스트 작성 및 삭제 기능을 구현했습니다.
+                </li>
+                <li>firebase - 배포 및 배포 테스트를 했습니다.</li>
+                <li>
+                  개발 서버에서 만난 CORS 에러에 proxy 서버를 사용하여 에러를
+                  해결한 경험으로 CORS에 대응하는 방법에 대해 익힐 수
+                  있었습니다.
+                </li>
+                <li>
+                  배포된 https에 암호화되지 않은 http 사이트에서 요청을 보낼
+                  경우 발생하는 Mixed Content 에러로 보안의 중요성을
+                  이해했습니다.
+                </li>
+              </p>
+              <a href="https://san-check.web.app/" class="btn btn-dark"
+                >배포링크</a
+              >
+              <a
+                href="https://github.com/yzinnie/SAN-CHECK"
+                class="btn btn-dark"
+                >깃허브</a
+              >
+              <a
+                href="https://yyjh222.notion.site/SAN-CHECK-7f7bf17ec21641469f3942ad3ee4b576?pvs=4"
+                class="btn btn-outline-secondary"
+                disabled
+                >에러노트</a
+              >
+            </span>
+          </span>
+
+          <span id="card" class="card" style="width: 18rem flex-direction-row">
+            <span class="card-body">
+              <h5 class="card-title">SAN-CHECK (산-쳌)</h5>
+              <p class="card-text">
+                산책 만족도를 위해 항상 체크하는 것들을 한 번에 체크하는 공간
+                <br />
+                REST API의 경험으로 작동 방식에 대해 공부할 수 있었던
+                프로젝트입니다.
+                <br />
+                <br />
+                1인 프로젝트
+                <br />
+                <br />
+                <img src="./imgs/react-color.svg" alt="react-icon" />
+                <img src="./imgs/javascript-color.svg" alt="react-icon" />
+
                 <li>
                   openweathermap API - 날씨 정보를 불러오는 API와 현재 위치
                   정보에 접근할 수 있는 API(Geolocation API)를 사용하여 사용자
@@ -101,23 +173,21 @@
             </span>
           </span>
         </span>
+        <div id="content-info">
+          <p>contact</p>
+          <a href="https://github.com/yzinnie">
+            <img src="./imgs/github-color.svg" alt="github-icon"
+          /></a>
+        </div>
       </div>
-      <div>
-        <span>
-          <h2>
-            background-attachment 속성으로, <br />
-            배경 이미지를 고정시켜보세요!
-          </h2></span
-        >
-      </div>
-
-      <div class="image3"></div>
     </div>
+    <div class="top-btn"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./app.js"></script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/header.js"></script>
   </body>
 </html>
