@@ -11,11 +11,20 @@
   font-style: normal;
 }
 
+/* 모드 설정 */
+.day {
+  background: white;
+}
+
+.night {
+  background: black;
+  color: white;
+}
+
 h2 {
   transform: translateY(-50%);
   opacity: 0;
   transition: 0.9s;
-  color: black;
 }
 
 h2.active {
@@ -23,15 +32,39 @@ h2.active {
   opacity: 1;
 }
 
-.main-image {
+#main-image {
+  display: block;
+
   background: url(./imgs/img3.jpg) no-repeat;
   background-attachment: fixed;
   background-size: contain;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
 }
 
-.main-image h2 {
+#main-image h2,
+#main-image p {
+  font-size: 110%;
+}
+
+#main-image h2 {
+  margin-top: 2%;
+}
+
+#main-image section {
+  width: fit-content;
   position: relative;
   left: 40%;
+}
+
+#main-image a {
+  color: #f3f4f5;
+}
+
+#main-image svg {
+  width: 30px;
+  margin-left: 1%;
 }
 
 /* ----------- */
@@ -44,34 +77,27 @@ h2.active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 100%;
   position: relative;
 }
 
 #project {
-  display: block;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
+  padding-top: 120px;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
 }
 
 #project h2 {
-  padding-top: 2%;
   font-size: 25px;
-  /* font-weight: 700; */
-  letter-spacing: 5px;
-}
-
-#content-info {
-  display: block;
-}
-
-#content-info img {
-  width: 3%;
 }
 
 .content {
   padding-left: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
@@ -90,8 +116,9 @@ h2.active {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
-  background: #fff;
+  height: 95px;
+  transition: margin-top 0.2s linear 0.1s;
+  background-color: #fff;
 }
 
 #header-main a {
@@ -99,9 +126,9 @@ h2.active {
   letter-spacing: 5px;
   padding: 10px 20px 10px 30px;
   font-size: 18px;
-  font-weight: 700;
-  color: #262626;
+  font-weight: 600;
   text-decoration: none;
+  color: #000000;
 }
 
 #menu ul {
@@ -114,14 +141,14 @@ h2.active {
 }
 
 .header.header-hide {
-  margin-top: -100px;
-  transition: 200ms;
+  margin-top: -95px;
 }
 
-.card-text img {
+.card-text svg {
   width: 30px;
 }
 
+/*up버튼*/
 .top-btn {
   position: fixed;
   bottom: 40px;
@@ -133,4 +160,53 @@ h2.active {
   background-position: center;
   background-image: url('./imgs/menu-up.png');
   cursor: pointer;
+}
+
+/*footer*/
+
+.footer {
+  padding-top: 60px;
+  padding-right: 24px;
+  padding-bottom: 85px;
+  padding-left: 24px;
+  display: block;
+  color: #37373a;
+  letter-spacing: -0.02em;
+  background-color: #f3f4f5;
+  text-align: center;
+}
+
+.footer i {
+  font-style: normal;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.footer svg {
+  width: 30px;
+}
+
+.footer h2 {
+  font-size: 17px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.23);
+}
+
+@media (max-width: 480px) {
+  #main-image {
+    padding-top: 0;
+  }
+  #main-image section {
+    background-color: #ffffffa9;
+    font-size: 15px;
+    padding: 10%;
+    padding-bottom: 150%;
+    position: static;
+  }
+  .footer h2 {
+    font-size: 90%;
+  }
 }

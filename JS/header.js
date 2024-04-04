@@ -1,10 +1,14 @@
-const header = document.querySelector('.header');
-const headerHeight = header.getBoundingClientRect().height;
+let lastScrollTop = 0;
 
-document.addEventListener('scroll', () => {
-  if (window.scrollY > headerHeight) {
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.header');
+  const scrollTop = window.scrollY;
+
+  if (scrollTop > lastScrollTop) {
     header.classList.add('header-hide');
   } else {
     header.classList.remove('header-hide');
   }
+
+  lastScrollTop = scrollTop;
 });
