@@ -6,21 +6,6 @@
   font-style: normal;
 }
 
-.navbar-brand {
-  font-weight: 900;
-  font-style: normal;
-}
-
-/* 모드 설정 */
-.day {
-  background: white;
-}
-
-.night {
-  background: black;
-  color: white;
-}
-
 h2 {
   transform: translateY(-50%);
   opacity: 0;
@@ -32,9 +17,8 @@ h2.active {
   opacity: 1;
 }
 
-#main-image {
+#info {
   display: block;
-
   background: url(./imgs/img3.jpg) no-repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -43,26 +27,30 @@ h2.active {
   padding-top: 10%;
 }
 
-#main-image h2,
-#main-image p {
+#info p {
   font-size: 110%;
-}
-
-#main-image h2 {
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-#main-image section {
+#info h2 {
+  font-size: 110%;
+  margin-top: 4%;
+}
+
+#info section {
   width: fit-content;
-  position: relative;
+  position: absolute;
   left: 40%;
+  bottom: 20%;
+  text-align: start;
 }
 
-#main-image a {
+#info a {
   color: #f3f4f5;
 }
 
-#main-image svg {
+#info svg {
   width: 30px;
   margin-left: 1%;
 }
@@ -94,14 +82,12 @@ h2.active {
   font-size: 25px;
 }
 
-.content {
-  padding-left: 10%;
-  width: 100%;
-  height: 100%;
-}
-
 .card {
   margin-bottom: 2%;
+}
+
+.card-text svg {
+  width: 30px;
 }
 
 /* 헤더 */
@@ -144,11 +130,14 @@ h2.active {
   margin-top: -95px;
 }
 
-.card-text svg {
-  width: 30px;
+.hello {
+  padding-left: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 /*up버튼*/
+
 .top-btn {
   position: fixed;
   bottom: 40px;
@@ -193,6 +182,16 @@ h2.active {
 .footer p {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.23);
+}
+
+/* 모드 설정 */
+.day {
+  background: white;
+}
+
+.night {
+  background: black;
+  color: white;
 }
 
 @media (max-width: 480px) {
