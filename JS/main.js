@@ -23,18 +23,3 @@ titleList.forEach((el) => observer.observe(el));
 topBtn.onclick = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-
-/* 다크모드 */
-// const changeHandle = () => {
-//   if (change.value === 'night') {
-//     body.classList.add('night');
-//     body.classList.remove('day');
-//     change.value = 'day';
-//   } else {
-//     body.classList.add('day');
-//     body.classList.remove('night');
-//     change.value = 'night';
-//   }
-// };
-
-// change.addEventListener('click', changeHandle);
