@@ -17,6 +17,11 @@ h2.active {
   opacity: 1;
 }
 
+li {
+  padding-bottom: 2%;
+  list-style: none;
+}
+
 #info {
   display: block;
   background: url(./imgs/img3.jpg) no-repeat;
@@ -40,7 +45,7 @@ h2.active {
 
 #info section {
   width: fit-content;
-  position: absolute;
+  position: relative;
   left: 40%;
   bottom: 20%;
   text-align: start;
