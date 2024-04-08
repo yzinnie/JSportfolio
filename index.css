@@ -45,7 +45,7 @@ li {
 
 #info section {
   width: fit-content;
-  position: relative;
+  position: absolute;
   left: 40%;
   bottom: 20%;
   text-align: start;
@@ -200,10 +200,10 @@ li {
 }
 
 @media (max-width: 480px) {
-  #main-image {
+  #info {
     padding-top: 0;
   }
-  #main-image section {
+  #info section {
     background-color: #ffffffa9;
     font-size: 15px;
     padding: 10%;
