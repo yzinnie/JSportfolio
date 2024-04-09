@@ -189,6 +189,11 @@ li {
   color: rgba(0, 0, 0, 0.23);
 }
 
+.footer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.23);
+}
+
 /* 모드 설정 */
 .day {
   background: white;
@@ -204,7 +209,7 @@ li {
     padding-top: 0;
   }
   #info section {
-    background-color: #ffffffa9;
+    background: #ffffffa9;
     font-size: 15px;
     padding: 10%;
     padding-bottom: 150%;
